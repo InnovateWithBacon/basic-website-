@@ -1,0 +1,173 @@
+nav {
+  background: hsl(316, 100%, 45%);
+  height: 40px;
+  width: 100%;
+  padding: 2em 0 2em 0;
+  margin: auto;
+  border-radius: 10px;
+}
+
+label.logo {
+  color: white;
+  position: static;
+  text-align: left;
+  font-size: 35px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 30px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 24px;
+  padding: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+a.active,
+a:hover {
+  background: #7220be;
+  transition: 0.5s;
+}
+
+/* Subheading */
+.subheading {
+  text-align: center;
+  background-color: #b52387;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* text logo BACon */
+.logo {
+  width: 60px;
+  height: 40px;
+  margin: 5px;
+  display: inline-block;
+  align-items: center;
+}
+
+/* sidebar 1, left side */
+
+.left {
+  color: #fcf6f6;
+  background-color: #b225ba;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 2em 0 2em 0;
+  flex: 5 5 150px;
+  display: flex;
+  align-items: center;
+  object-fit: cover;
+  flex: 1;
+  background-color: #4d15ad;
+}
+
+/* sidebar 2, right side */
+
+.right {
+  color: #fff;
+  background-color: #b225ba;
+}
+
+/* footer-navbar */
+
+.footer {
+  background: hsl(316, 100%, 45%);
+  height: 50%;
+  width: 100%;
+}
+
+/* For desktop screens with a maximum width of 952px */
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+/* For mobile screens with a maximum width of 550px */
+@media all and (max-width: 550px) {
+  /* Adjust your mobile styles here */
+  .main {
+    flex-direction: column;
+  }
+  main {
+    padding: 5em 0 5em 0;
+  }
+}
+
+/* For iPad and smaller screens with a maximum width of 858px */
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+}
+
+/* Styling for .left, .main, and .right */
+.left,
+.main,
+.right {
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Video-main styles */
+video {
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+/* Style for the footer */
+footer {
+  background-color: hsl(316, 100%, 45%);
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+footer p {
+  font-size: 35px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #f6f20e;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Button styles */
+.button {
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: #5e0c98;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Style on button hover */
+.button:hover {
+  background-color: #0fdafa;
+}
